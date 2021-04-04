@@ -1,0 +1,82 @@
+
+/* General CSS rules for every viewport, including large desktop screens */
+body {
+    background-color:  lightgoldenrodyellow;
+  }
+  #topnav {
+    background-color: lightgreen;
+    overflow: hidden;
+  }
+  #topnav a {
+    float: left;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  #topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  #topnav a.active {
+    background-color: lightskyblue;
+    color: white;
+  }
+
+  .home {
+    height: 80vh;
+    background-color: lightgray;
+  }
+
+  .home_img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .about {
+    height: 80vh;
+    background-color: bisque;
+  }
+  .about_img {
+    height: 30%;
+    width: 30%;
+    object-fit: cover;
+  }
+  .SOC {
+    background-color:lightsalmon;
+    height: 100vh;
+  }
+  .contact {
+    background-color:lightskyblue;
+    height: 100vh;
+  }
+  .logo {
+    object-fit: fill;
+    width: 100px;
+  }
+/* removes the undeline under a link */
+  a:link {
+    text-decoration: none;
+  }
+/* the flex container becomes flexible by setting the display property to flex */
+  .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+  }
+
+  .flex-container > div {
+      background-color: white;
+      width: 30vh;
+      height: 80vh;
+      margin: 10px;
+      padding: 20px;
+      font-size: 17px;
+  }
+
+  
