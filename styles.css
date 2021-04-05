@@ -1,24 +1,31 @@
 
 /* General CSS rules for every viewport, including large desktop screens */
 body {
-    background-color:  lightgoldenrodyellow;
+    background-color: #615D6C;
+    font-family: Arial, Helvetica, sans-serif;
   }
+
+  footer {
+      color: #CAE5FF;
+  }
+
   #topnav {
-    background-color: lightgreen;
+    background-color: #615D6C;
     overflow: hidden;
   }
   #topnav a {
     float: left;
-    color: #F2F2F2;
+    color: #CAE5FF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
   }
   #topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color:  #CAE5FF;
+    color: #615D6C;
   }
+
   #topnav a.active {
     background-color: lightskyblue;
     color: white;
@@ -26,7 +33,7 @@ body {
 
   .home {
     height: 80vh;
-    background-color: lightgray;
+    background-color: #615D6C;
   }
 
   .home_img {
@@ -37,46 +44,146 @@ body {
 
   .about {
     height: 80vh;
-    background-color: bisque;
+    background-color: #615D6C;
+    color: #ACEDFF;
   }
+
   .about_img {
     height: 30%;
     width: 30%;
     object-fit: cover;
   }
+
   .SOC {
-    background-color:lightsalmon;
+    background-color: #615d6c;
     height: 100vh;
+    color: #ACEDFF;
   }
+
   .contact {
     background-color:lightskyblue;
     height: 100vh;
   }
+
   .logo {
     object-fit: fill;
     width: 100px;
   }
-/* removes the undeline under a link */
+
+/* removes the underline under a link */
   a:link {
     text-decoration: none;
   }
 /* the flex container becomes flexible by setting the display property to flex */
   .flex-container {
-    display: flex;
+    /* display: flex;
     flex-flow: row wrap;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    align-content: space-between;
+    align-content: space-between; */
+    display: flex;
+    justify-content: space-around;
   }
 
   .flex-container > div {
-      background-color: white;
-      width: 30vh;
-      height: 80vh;
+      background-color: #cae5ff;
+      /* width: 40vh;
+      height: 55vh;
       margin: 10px;
       padding: 20px;
-      font-size: 17px;
+      font-size: 17px; */
+      width: 300px;
+      height: 400px;
+      margin: 30px;
+     box-shadow: 5px 5px 20px black ; 
+      padding: 10px;
+      color: #615d6c;
   }
 
+  .flex-item > h3 {
+      text-align: center;
+  }
+
+  .github-octocat {
+      max-width: 100%;
+  }
+
+  .subtext {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  /* Contact Form Style */
+  * {
+    box-sizing: border-box;
+  }
+  /* Style text inputs, select elements and textareas */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+    /* Style email inputs, select elements and textareas */
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
   
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  /* Style the container */
+  .contact-form-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
