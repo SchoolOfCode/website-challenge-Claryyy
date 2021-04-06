@@ -19,3 +19,17 @@ This is not only a chance for you to practice the core skills of HTML and CSS, b
 Although you will each have an individual repository in which to make the website, there is nothing stopping you pair programming with your partner on the project. Organise your time so that you can spend an equal amount of time on each project. For example, if you spend three hours coding together on Sunday, you would spend 1.5 hours pair programming on one site, before moving over to the other site.
 
 This project will span the first two weeks of the bootcamp, and you will be given time in live evening sessions to work on it as well.
+
+## What I learned during Week 1 about HTML and CSS?
+
+- I learned how to create a HTML file and what are the minimum requirements so that it will display in a browser
+- I learned how to link my CSS file with my HTML file
+- I learned about the different selectors in CSS, and that it is actually possible to create animations in CSS (not mandatory to use JS)
+- I learned that a best practice of HTML to avoid div-itis and class-itis is to use **semantic** elements like <&ltsection>, <&ltarticle>, <&ltfooter>
+- I learned how CSS should be used to ensure responsiveness on different screen sizes
+
+## What else did I learn during this past week?
+
+- I learned how to use GitHub and use the terminal in my IDE to write git commands
+- I learned about line commands using keyboard shortcuts
+- I learned about MarkDown, the language used to write _this_ README file
