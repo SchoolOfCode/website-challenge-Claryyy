@@ -61,8 +61,13 @@ body {
   }
 
   .contact {
-    background-color:lightskyblue;
+    background-color: #615D6C;
+    color: #ACEDFF;
     height: 100vh;
+  }
+
+  a.contact:visited {
+    color: #ACEDFF;
   }
 
   .logo {
@@ -139,10 +144,11 @@ body {
   label {
     padding: 12px 12px 12px 0;
     display: inline-block;
+    color: #615d6c;
   }
   /* Style the submit button */
   input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #6f8ab7;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -152,12 +158,12 @@ body {
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #6f8ab7;
   }
   /* Style the container */
   .contact-form-container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #cae5ff;
     padding: 20px;
   }
   /* Floating column for labels: 25% width */
