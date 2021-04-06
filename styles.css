@@ -1,29 +1,37 @@
 
 /* General CSS rules for every viewport, including large desktop screens */
 body {
-    background-color: #615D6C;
+    background-color: #212121;
     font-family: Arial, Helvetica, sans-serif;
   }
 
   footer {
-      color: #CAE5FF;
+      color: #b3b3b3;
   }
 
+h2{
+  color: #81d4fa;
+}
+
+h3 {
+  color: #000000;
+}
+
   #topnav {
-    background-color: #615D6C;
+    background-color: #212121;
     overflow: hidden;
   }
   #topnav a {
     float: left;
-    color: #CAE5FF;
+    color: #b6ffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
   }
   #topnav a:hover {
-    background-color:  #CAE5FF;
-    color: #615D6C;
+    background-color:  #b6ffff;
+    color: #212121;
   }
 
   #topnav a.active {
@@ -33,7 +41,7 @@ body {
 
   .home {
     height: 80vh;
-    background-color: #615D6C;
+    background-color: #212121;
   }
 
   .home_img {
@@ -44,8 +52,8 @@ body {
 
   .about {
     height: 80vh;
-    background-color: #615D6C;
-    color: #ACEDFF;
+    background-color: #212121;
+    color: #ffffff;
   }
 
   .about_img {
@@ -55,14 +63,14 @@ body {
   }
 
   .SOC {
-    background-color: #615d6c;
+    background-color: #212121;
     height: 100vh;
     color: #ACEDFF;
   }
 
   .contact {
-    background-color: #615D6C;
-    color: #ACEDFF;
+    background-color: #212121;
+    color: #ffffff;
     height: 100vh;
   }
 
@@ -90,9 +98,9 @@ body {
     display: flex;
     justify-content: space-around;
   }
-
+/* The flex boxes to showcase past work to act as portfolio */
   .flex-container > div {
-      background-color: #cae5ff;
+      background-color: #81d4fa;
       /* width: 40vh;
       height: 55vh;
       margin: 10px;
@@ -103,7 +111,7 @@ body {
       margin: 30px;
      box-shadow: 5px 5px 20px black ; 
       padding: 10px;
-      color: #615d6c;
+      color: #212121;
   }
 
   .flex-item > h3 {
@@ -144,12 +152,12 @@ body {
   label {
     padding: 12px 12px 12px 0;
     display: inline-block;
-    color: #615d6c;
+    color: #ffffff;
   }
   /* Style the submit button */
   input[type=submit] {
-    background-color: #6f8ab7;
-    color: white;
+    background-color: #81d4fa;
+    color: #000000;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -163,7 +171,7 @@ body {
   /* Style the container */
   .contact-form-container {
     border-radius: 5px;
-    background-color: #cae5ff;
+    background-color: #484848;
     padding: 20px;
   }
   /* Floating column for labels: 25% width */
