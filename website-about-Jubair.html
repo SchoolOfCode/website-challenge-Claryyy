@@ -14,7 +14,7 @@
 
     <header>
         <div id="topnav">
-            <a href="#home"><i class="fa fa-fw fa-home" alt="Home symbol"></i> Home</a>
+            <a class="active" href="#home"><i class="fa fa-fw fa-home" alt="Home symbol"></i> Home</a>
             <a href="#about-me"><i class="fas fa-address-card" alt="About symbol"></i> About</a>
             <a href="#SOC"><i class="fas fa-desktop" alt="Computer symbol"></i> SoC</a>
             <a href="#contact"><i class="fas fa-paper-plane" alt="Contact symbol"></i> Contact</a>
@@ -25,19 +25,26 @@
 <body>
     <section class="home" id="home">
             <img src="photo-of-tokyo.jpg" class="home_img" alt="Photo of Tokyo" />
+            <h1>Jubair Ahmed</h1>
     </section>
 
     <section class="about" id="about-me">
         <h2>About Me</h2>
         <div>
             <img src="smiley-face.jpg" class="about_img" alt="Photo of Jubair" />
-            <p>I'm Jubair Ahmed, a 23 years old aspiring front-end developer who recently graduated in Automotive engineering. <br>
+            <p>I'm Jubair Ahmed, a 23 years old aspiring front-end developer who recently graduated in Automotive engineering. 
+              <br>
+              <br>
               I practice Thai boxing and dream of travelling to Japan one day.
             I enjoy playing video games, especially Ghost of Tsushima on PS4.
             My favorite food is fish'n'chips (Hajees on Coventry Road is the best!) and I like sweet food too.
-            My favorite film is the The Joker and my favorite TV serie is The Office. <br>
-            Fun fact about me: I can sleep anywhere even with the lights on and noise around me.<br>
-            I joined School of Code because I want to get a job in Tech. I also enjoy teaching people and when I saw that SoC had teamed with Hack your Future I knew I had to join them. Hack your future helps refugees who want a career in tech and I hope to help them in a few years.</p>
+            My favorite film is the The Joker and my favorite TV serie is The Office. 
+            <br>
+            <br>
+            Fun fact about me: I can sleep anywhere even with the lights on and noise around me.
+            <br>
+            <br>
+            I joined School of Code because I want to get a job in Tech. I also enjoy teaching people and when I saw that School of Code had teamed with Hack your Future I knew I had to join them. Hack your future helps refugees who want a career in tech and I hope to volunteer with them in a few years.</p>
         </div>
     </section>
 
@@ -46,19 +53,19 @@
         <div class="flex-container">
 
             <div class="flex-item">
-                <img class="flex-project-img" src="" alt="Project image One" />
+                <img class="jubair-avatar" src="jubair-avatar.png" alt="Jubair's Pixel Avatar" />
                 <h3>Avatar</h3>
                 <p class="subtext"> This is my avatar project and I really enjoyed making it.</p>
-                <hr />
-                <p class="subtext">View here</p>
+                <!-- <hr />
+                <p class="subtext">View here</p> -->
             </div>
 
             <div class="flex-item">
-                <img class="flex-project-img" src="" alt="Project image Two" />
+                <img class="jubair-scratch-game" src="jubair-scratch-game.png" alt="Screenshot of Jubair's Scratch game" />
                 <h3>Scratch game</h3>
                 <p class="subtext"> This is the Scratch game I made. Why don't you have a go and tell me what you think about it?</p>
                 <hr />
-                <p class="subtext">View here</p>
+                <p class="subtext"><a href="https://scratch.mit.edu/projects/454459803/" target="_blank">View here</a></p>
             </div>
 
             <div class="flex-item">
@@ -66,7 +73,7 @@
                 <h3>GitHub</h3>
                 <p class="subtext"> This is my GitHub where you will find more about my current and past projects.</p>
                 <hr />
-                <p class="subtext"><a href="https://github.com/JubairAhmed111">View here</a></p>
+                <p class="subtext"><a href="https://github.com/JubairAhmed111" target="_blank">View here</a></p>
             </div>
     </section>
 
@@ -74,7 +81,7 @@
         <h2>Getting in touch with me</h2>
 
         <div class="contact-form-container">
-            <form action="/action_page.php">
+            <form action="mailto:jubair_111@hotmail.com" method="post" enctype="text/plain">
               <div class="row">
                 <div class="col-25">
                   <label for="fname">First Name</label>
@@ -107,7 +114,16 @@
                   <label for="subject">Subject</label>
                 </div>
                 <div class="col-75">
-                  <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px" required></textarea>
+                  <input type="text" id="subject" name="subject" placeholder="Add a subject" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="message">Message</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="message" name="message" placeholder="Write something..." style="height:200px" required></textarea>
                 </div>
               </div>
 
@@ -116,15 +132,26 @@
               </div>
             </form>
           </div>
-
-        <p>You can find me on LinkedIn,<a href="https://www.linkedin.com/in/jubair-ahmed111/"> click here</a>.</p>
-        <p>You can also follow me on Twitter.</p>
     </section>
 </body>
 
 <footer>
-    <p>Website made by Clarisse Leduc. To learn more about Clarisse, click <a
-            href="https://www.linkedin.com/in/clarisse-leduc">here</a>.</p>
+  <ul role="list" class="social-icons-list">
+    <li class="list-item">
+        <a href="https://www.linkedin.com/in/jubair-ahmed111/" target="_blank" class="button"> 
+        <img src="https://uploads-ssl.webflow.com/5ff211b17095aa7b6582b8cb/5ff211b17095aa382582b906_linkedin.svg" alt="LinkedIn icon" class="social-icon">
+        </a>
+    </li>
+    <!-- <li class="list-item">
+      <a href="https://www.twitter.com" target="_blank" class="button"> 
+      <img src="https://uploads-ssl.webflow.com/5ff211b17095aa7b6582b8cb/5ff211b17095aa087382b905_twitter.svg" alt="LinkedIn icon" class="social-icon"
+      </a>
+  </li> -->
+  </ul>
+  <br>
+  <br>
+    <p class="credit">Website made by Clarisse Leduc. To learn more about Clarisse, click <a
+            href="https://www.linkedin.com/in/clarisse-leduc" target="_blank">here</a>.</p>
 </footer>
 
 </html>

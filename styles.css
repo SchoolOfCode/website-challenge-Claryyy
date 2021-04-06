@@ -3,14 +3,26 @@
 body {
     background-color: #212121;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 24px 10px;
   }
 
   footer {
       color: #b3b3b3;
+      height: max-content;
+      font-size: small;
+      padding-top: 20px;
   }
+
+h1 {
+  background-color: #81d4fa;
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+}
 
 h2{
   color: #81d4fa;
+  text-align: center;
 }
 
 h3 {
@@ -20,6 +32,7 @@ h3 {
   #topnav {
     background-color: #212121;
     overflow: hidden;
+    width: 100%;
   }
   #topnav a {
     float: left;
@@ -28,19 +41,30 @@ h3 {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    width: 25%;
   }
+
+  @media (max-width: 500px) {
+    #topnav a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
   #topnav a:hover {
     background-color:  #b6ffff;
     color: #212121;
   }
 
   #topnav a.active {
-    background-color: lightskyblue;
-    color: white;
+    background-color:  #b6ffff;
+    color: #212121;
   }
 
   .home {
-    height: 80vh;
+    height: max-content;
     background-color: #212121;
   }
 
@@ -48,10 +72,11 @@ h3 {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    max-height: 50vh;
   }
 
   .about {
-    height: 80vh;
+    height: max-content;
     background-color: #212121;
     color: #ffffff;
   }
@@ -64,14 +89,14 @@ h3 {
 
   .SOC {
     background-color: #212121;
-    height: 100vh;
+    height: max-content;
     color: #ACEDFF;
   }
 
   .contact {
     background-color: #212121;
     color: #ffffff;
-    height: 100vh;
+    height: max-content;
   }
 
   a.contact:visited {
@@ -98,6 +123,18 @@ h3 {
     display: flex;
     justify-content: space-around;
   }
+
+  @media (max-width: 767px) {
+    /* Rules for smartphones only */
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+  }
+
 /* The flex boxes to showcase past work to act as portfolio */
   .flex-container > div {
       background-color: #81d4fa;
@@ -120,6 +157,14 @@ h3 {
 
   .github-octocat {
       max-width: 100%;
+  }
+
+  .jubair-avatar {
+    max-width: 100%;
+  }
+
+  .jubair-scratch-game {
+    max-width: 100%;
   }
 
   .subtext {
@@ -200,4 +245,18 @@ h3 {
       width: 100%;
       margin-top: 0;
     }
+  }
+
+.list-item {
+  list-style: none;
+}
+
+.social-icons-list {
+  justify-content: center;
+  align-content: center;
+}
+
+  .credit {
+    padding-bottom: 10px;
+    text-align: center;
   }
