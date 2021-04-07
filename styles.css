@@ -251,9 +251,25 @@ h3 {
   list-style: none;
 }
 
-.social-icons-list {
-  justify-content: center;
+.flex-footer-container {
+  display: flex;
+  justify-content: space-around;
   align-content: center;
+  flex-direction: column;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+.credit-container {
+  display: flex;
+  justify-content: center;
 }
 
   .credit {
