@@ -82,12 +82,12 @@ h3 {
   }
 
   .about_img {
-    height: 30%;
-    width: 30%;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 
-  .SOC {
+  .portfolio {
     background-color: #212121;
     height: max-content;
     color: #ACEDFF;
@@ -107,6 +107,27 @@ h3 {
     object-fit: fill;
     width: 100px;
   }
+
+  .about-flex-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 767px) {
+    /* Rules for smartphones only */
+    .about-flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .about-flex-item {
+      padding: 10px;
+      margin: 30px;
+    }
 
 /* removes the underline under a link */
   a:link {
