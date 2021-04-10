@@ -29,7 +29,7 @@ h3 {
   color: #000000;
 }
 
-#topnav {
+#navbar {
     background-color: #212121;
     overflow: hidden;
     width: 100%;
@@ -39,7 +39,7 @@ h3 {
   }
 
 
-#topnav a {
+#navbar a {
     float: left;
     color: #b6ffff;
     text-align: center;
@@ -50,7 +50,7 @@ h3 {
   }
 
   @media (max-width: 500px) {
-    #topnav a {
+    #navbar a {
       float: none;
       display: block;
       width: 100%;
@@ -58,7 +58,7 @@ h3 {
     }
   }
 
-  #topnav a:hover {
+  #navbar a:hover {
     background-color:  #b6ffff;
     color: #212121;
   }
@@ -68,7 +68,7 @@ h3 {
     background-color: #212121;
   }
 
-  .home_img {
+  .home__picture {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -81,19 +81,19 @@ h3 {
     color: #ffffff;
   }
 
-  .about_img {
-    height: 30%;
-    width: 30%;
+  .about__picture {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 
-  .SOC {
+  .portfolio {
     background-color: #212121;
     height: max-content;
     color: #ACEDFF;
   }
 
-  .contact {
+  .contact-form {
     background-color: #212121;
     color: #ffffff;
     height: max-content;
@@ -108,19 +108,47 @@ h3 {
     width: 100px;
   }
 
-/* removes the underline under a link */
-  a:link {
-    text-decoration: none;
-  }
-/* the flex container becomes flexible by setting the display property to flex */
-  .flex-container {
+  .about__flex-container {
     display: flex;
     justify-content: space-around;
   }
 
   @media (max-width: 767px) {
     /* Rules for smartphones only */
-    .flex-container {
+    .about__flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .about__flex-item {
+      margin: 30px;
+    }
+
+    .about__intro {
+      padding: 1.9em;
+    }
+
+    .about__flex-item__content {
+      line-height: 1.5em;
+    }
+
+/* removes the underline under a link */
+  a:link {
+    text-decoration: none;
+  }
+/* the flex container becomes flexible by setting the display property to flex */
+  .portfolio__flex-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 767px) {
+    /* Rules for smartphones only */
+    .portfolio__flex-container {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -128,14 +156,14 @@ h3 {
         align-items: center;
       }
 
-      .flex-container > div {
+      .portfolio__flex-container > div {
         width: 60vh;
         height: 90vh;
   }
 }
 
 /* The flex boxes to showcase past work to act as portfolio */
-  .flex-container > div {
+  .portfolio__flex-container > div {
       background-color: #81d4fa;
       width: 40vh;
       height: 60vh;
@@ -145,23 +173,23 @@ h3 {
       color: #212121;
   }
 
-  .flex-item > h3 {
+  .portfolio__flex-item > h3 {
       text-align: center;
   }
 
-  .github-octocat {
+  .portfolio__github {
       max-width: 100%;
   }
 
-  .jubair-avatar {
+  .portfolio__avatar {
     max-width: 100%;
   }
 
-  .jubair-scratch-game {
+  .portfolio__scratch-game {
     max-width: 100%;
   }
 
-  .subtext {
+  .portfolio__subtext {
     text-align: center;
     font-size: 15px;
     font-weight: 300;
@@ -208,7 +236,7 @@ h3 {
     background-color: #6f8ab7;
   }
   /* Style the container */
-  .contact-form-container {
+  .contact-form__container {
     border-radius: 5px;
     background-color: #484848;
     padding: 20px;
@@ -241,18 +269,18 @@ h3 {
     }
   }
 
-.list-item {
+.footer__list-item {
   list-style: none;
 }
 
-.flex-footer-container {
+.footer__container {
   display: flex;
   justify-content: space-around;
   align-content: center;
   flex-direction: column;
 }
 
-.list-container {
+.footer__list-container {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -261,12 +289,12 @@ h3 {
   margin-left: 30%;
 }
 
-.credit-container {
+.footer__credit-container {
   display: flex;
   justify-content: center;
 }
 
-  .credit {
+  .footer__credit {
     padding-bottom: 10px;
     text-align: center;
   }
